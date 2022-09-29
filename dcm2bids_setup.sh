@@ -5,12 +5,12 @@
 # based on dcm2bids_scaffold
 #
 # <output_dir>
+# └── code
 # └── data
 #     ├── bids_data
 #     │   ├── derivatives
 #     │   │   └── logs
 #     │   └── logs
-#     ├── code
 #     ├── logs
 #     └── sourcedata
 
@@ -59,12 +59,11 @@ if [ ! -d $output_dir ]; then
 	fi
 fi
 
+echo "Creating $output_dir/code"
+testdir "$output_dir/code"
 
 echo "Creating $output_dir/data"
 testdir "$output_dir/data"
-
-echo "Creating $output_dir/data/code"
-testdir $output_dir/data/code
 
 echo "Creating $output_dir/data/logs"
 testdir $output_dir/data/logs
@@ -83,6 +82,9 @@ testdir $output_dir/data/bids_data/derivatives
 
 echo "Creating $output_dir/data/bids_data/derivatives/logs"
 testdir $output_dir/data/bids_data/derivatives/logs
+
+echo "Copying initial dataset description"
+cp dataset_description.json $output_dir/data/bids_data/
 
 echo "Done"
 
