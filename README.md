@@ -1,1 +1,1 @@
-# bic_dcm2bids
+# dcm2bids_bic
