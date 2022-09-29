@@ -11,66 +11,44 @@
       }
     },
     {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-01",
+      "dataType": "anat",
+      "modalityLabel": "IR",
       "criteria": {
-        "SeriesDescription": "Food_run1"
+        "SeriesDescription": "IR EPI"
       },
       "sidecarChanges": {
-        "TaskName": "foodpics"
+        "ProtocolName": "IR"
       }
     },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-02",
-      "criteria": {
-        "SeriesDescription": "Food_run2"
-      },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-delaydisc_run-01",
-      "criteria": {
-        "SeriesDescription": "discount_run1"
-      },
-      "sidecarChanges": {
-        "TaskName": "delaydisc"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-delaydisc_run-02",
-      "criteria": {
-        "SeriesDescription": "discount_run2"
-      },
-      "sidecarChanges": {
-        "TaskName": "delaydisc"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-rest",
-      "criteria": {
-        "SeriesDescription": "rest_10min"
-      },
-      "sidecarChanges": {
-        "TaskName": "rest"
-      }
-    },
+    
     {
       "dataType": "func",
       "modalityLabel": "bold",
       "customLabels": "task-foodpics_run-01",
       "criteria": {
         "SeriesDescription": "fMRI_Food_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_1a"
       },
       "sidecarChanges": {
         "TaskName": "foodpics"
@@ -90,9 +68,42 @@
     {
       "dataType": "func",
       "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_2"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
       "customLabels": "task-delaydisc_run-01",
       "criteria": {
         "SeriesDescription": "fMRI_discount_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "delaydisc"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-delaydisc_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_disc_1"
       },
       "sidecarChanges": {
         "TaskName": "delaydisc"
@@ -109,61 +120,17 @@
         "TaskName": "delaydisc"
       }
     },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-rest",
-      "criteria": {
-        "SeriesDescription": "fMRI_rest_run2"
-      },
-      "sidecarChanges": {
-        "TaskName": "rest"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-01",
-      "criteria": {
-        "SeriesDescription": "Food_run1_rr"
-      },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-02",
-      "criteria": {
-        "SeriesDescription": "Food_run2_rr"
-      },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-delaydisc_run-01",
-      "criteria": {
-        "SeriesDescription": "discount_run1_rr"
-      },
-      "sidecarChanges": {
-        "TaskName": "delaydisc"
-      }
-    },
-    {
+     {
       "dataType": "func",
       "modalityLabel": "bold",
       "customLabels": "task-delaydisc_run-02",
       "criteria": {
-        "SeriesDescription": "discount_run2_rr"
+        "SeriesDescription": "fMRI_disc_2"
       },
       "sidecarChanges": {
         "TaskName": "delaydisc"
       }
-    },
+    },   
     {
       "dataType": "func",
       "modalityLabel": "bold",
@@ -175,70 +142,53 @@
         "TaskName": "rest"
       }
     },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-01",
-      "criteria": {
-        "SeriesDescription": "Food_run1_RR"
-      },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-02",
-      "criteria": {
-        "SeriesDescription": "Food_run2_RR"
-      },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-delaydisc_run-01",
-      "criteria": {
-        "SeriesDescription": "discount_run1_RR"
-      },
-      "sidecarChanges": {
-        "TaskName": "delaydisc"
-      }
-    },
-    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-delaydisc_run-02",
-      "criteria": {
-        "SeriesDescription": "discount_run2_RR"
-      },
-      "sidecarChanges": {
-        "TaskName": "delaydisc"
-      }
-    },
+
     {
       "dataType": "func",
       "modalityLabel": "bold",
       "customLabels": "task-rest",
       "criteria": {
-        "SeriesDescription": "rest_10min_RR"
+        "SeriesDescription": "fMRI_rest_1"
       },
       "sidecarChanges": {
         "TaskName": "rest"
       }
     },
     {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-rest",
+      "dataType": "fmap",
+      "modalityLabel": "magnitude1",
       "criteria": {
-        "SeriesDescription": "rest_10min_rr"
+        "SeriesDescription": "field_map_3mm",
+        "EchoNumber": 1,
+        "EchoTime": 0.00412
       },
       "sidecarChanges": {
-        "TaskName": "rest"
+        "TaskName": "fmap"
+      }
+    },
+    {
+      "dataType": "fmap",
+      "modalityLabel": "magnitude2",
+      "criteria": {
+        "SeriesDescription": "field_map_3mm",
+        "EchoNumber": 2,
+		"EchoTime": 0.00658
+      },
+      "sidecarChanges": {
+        "TaskName": "fmap"
+      }
+    },
+    {
+      "dataType": "fmap",
+      "modalityLabel": "phasediff",
+      "criteria": {
+        "SeriesDescription": "field_map_3mm",
+        "ImageType": ["ORIGINAL", "PRIMARY", "P", "ND", "PHASE"],
+		"EchoTime1": 0.00412,
+		"EchoTime2": 0.00658
+      },
+      "sidecarChanges": {
+        "TaskName": "fmap"
       }
     }
   ]
