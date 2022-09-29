@@ -83,8 +83,10 @@ testdir $output_dir/data/bids_data/derivatives
 echo "Creating $output_dir/data/bids_data/derivatives/logs"
 testdir $output_dir/data/bids_data/derivatives/logs
 
-echo "Copying initial dataset description"
+echo "Copying initial dataset description and participant info files"
 cp dataset_description.json $output_dir/data/bids_data/
+cp participants.json $output_dir/data/bids_data/
+cp participants.tsv $output_dir/data/bids_data/
 
 echo "Done"
 
