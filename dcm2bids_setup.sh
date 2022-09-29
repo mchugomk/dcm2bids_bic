@@ -5,14 +5,18 @@
 # based on dcm2bids_scaffold
 #
 # <output_dir>
-# └── code
+# ├── code
 # └── data
 #     ├── bids_data
+#     │   ├── dataset_description.json
 #     │   ├── derivatives
 #     │   │   └── logs
-#     │   └── logs
+#     │   ├── logs
+#     │   ├── participants.json
+#     │   └── participants.tsv
 #     ├── logs
 #     └── sourcedata
+
 
 
 ## Define test function for folders
