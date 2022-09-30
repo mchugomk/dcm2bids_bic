@@ -3,6 +3,7 @@
 ## Run dcm2bids for a single subject
 
 study_dir=""		# initialize study dir
+config_file=""		# initialize config file
 
 ## Process command line arguments
 usage(){ echo "Usage: `basename $0` -i <study id> -d <source_participant_dir> -p <participant_id> -s <session_id> -c <config_file> -m <study_dir>
@@ -55,10 +56,14 @@ shift $((OPTIND-1))
 if [ "$study_dir" = "" ]; then
 	study_dir=/data/analysis/maureen/${study_id}
 fi
+
 data_dir=${study_dir}/data							# main data directory for sourcedata and bids output
 bids_dir=$data_dir/bids_data						# bids data directory
 sourcedata_dir=$data_dir/sourcedata					# directory with raw imaging files (e.g. IMA)
-config_file=dcm2bids_json_files/${study_id}/dcm2bids_config_${study_id}.json	# default config file for specified study
+
+if [ "$config_file" = "" ]; then
+	config_file=dcm2bids_json_files/${study_id}/dcm2bids_config_${study_id}.json	# default config file for specified study
+fi
 
 ## Check inputs
 if [ ! -d $data_dir ]; then
