@@ -1,0 +1,101 @@
+{
+  "descriptions": [
+    {
+      "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+        "SeriesDescription": "t1_mprage_sag_p2"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "T1"
+      }
+    },
+    {
+      "dataType": "anat",
+      "modalityLabel": "IR",
+      "criteria": {
+        "SeriesDescription": "IR_EPI"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "IR"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "rest_10min"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-mst_run-01",
+      "criteria": {
+        "SeriesDescription": "MST_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "mst"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-mst_run-02",
+      "criteria": {
+        "SeriesDescription": "MST_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "mst"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-mst_run-03",
+      "criteria": {
+        "SeriesDescription": "MST_run3"
+      },
+      "sidecarChanges": {
+        "TaskName": "mst"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-mst_run-04",
+      "criteria": {
+        "SeriesDescription": "MST_run4"
+      },
+      "sidecarChanges": {
+        "TaskName": "mst"
+      }
+    },
+	{
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-oddball_run-01",
+      "criteria": {
+        "SeriesDescription": "odd_ball_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "oddball"
+      }
+    },
+	{
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-oddball_run-02",
+      "criteria": {
+        "SeriesDescription": "odd_ball_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "oddball"
+      }
+    }
+  ]
+}
