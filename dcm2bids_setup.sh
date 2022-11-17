@@ -17,7 +17,7 @@
 #     ├── logs
 #     └── sourcedata
 
-
+script_dir=`dirname $0`
 
 ## Define test function for folders
 function testdir {
@@ -88,9 +88,9 @@ echo "Creating $output_dir/data/bids_data/derivatives/logs"
 testdir $output_dir/data/bids_data/derivatives/logs
 
 echo "Copying initial dataset description and participant info files"
-cp dataset_description.json $output_dir/data/bids_data/
-cp participants.json $output_dir/data/bids_data/
-cp participants.tsv $output_dir/data/bids_data/
+cp ${script_dir}/dataset_description.json $output_dir/data/bids_data/
+cp ${script_dir}/participants.json $output_dir/data/bids_data/
+cp ${script_dir}/participants.tsv $output_dir/data/bids_data/
 
 echo "Done"
 
