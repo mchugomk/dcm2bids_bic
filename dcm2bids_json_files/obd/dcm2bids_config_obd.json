@@ -1,0 +1,230 @@
+{
+  "descriptions": [
+    {
+      "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+        "SeriesDescription": "t1_mprage_sag_p2"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "T1"
+      }
+    },
+    {
+      "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+        "SeriesDescription": "t1_mprage_sag"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "T1"
+      }
+    },
+    {
+      "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+        "SeriesDescription": "MPRAGE_SAG"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "T1"
+      }
+    },
+    {
+      "dataType": "anat",
+      "modalityLabel": "IR",
+      "criteria": {
+        "SeriesDescription": "IR_EPI"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "IR"
+      }
+    },
+    {
+      "dataType": "anat",
+      "modalityLabel": "IR",
+      "criteria": {
+        "SeriesDescription": "IR EPI"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "IR"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "Food_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "Food_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-delaydisc_run-01",
+      "criteria": {
+        "SeriesDescription": "discount_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "delaydisc"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-delaydisc_run-02",
+      "criteria": {
+        "SeriesDescription": "discount_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "delaydisc"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "rest_10min"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_Food_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "fMRI_Food_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "fMRI_rest_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "Food_run1_rr"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "Food_run2_rr"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "fMRI_rest"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "Food_run1_RR"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "Food_run2_RR"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "rest_10min_RR"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "rest_10min_rr"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "fMRI_rest_10min"
+      },
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+    }
+  ]
+}
