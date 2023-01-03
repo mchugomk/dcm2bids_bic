@@ -14,14 +14,35 @@
       "dataType": "anat",
       "modalityLabel": "IR",
       "criteria": {
-        "SeriesDescription": "IR EPI"
+        "SeriesDescription": "IR_EPI"
       },
       "sidecarChanges": {
         "ProtocolName": "IR"
       }
     },
-    
-    {
+{
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_run1"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+{
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-02",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_run2"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+{
       "dataType": "func",
       "modalityLabel": "bold",
       "customLabels": "task-foodpics_run-01",
@@ -129,43 +150,6 @@
       },
       "sidecarChanges": {
         "TaskName": "rest"
-      }
-    },
-    {
-      "dataType": "fmap",
-      "modalityLabel": "magnitude1",
-      "criteria": {
-        "SeriesDescription": "field_map_3mm",
-        "EchoNumber": 1,
-        "EchoTime": 0.00412
-      },
-      "sidecarChanges": {
-        "TaskName": "fmap"
-      }
-    },
-    {
-      "dataType": "fmap",
-      "modalityLabel": "magnitude2",
-      "criteria": {
-        "SeriesDescription": "field_map_3mm",
-        "EchoNumber": 2,
-		"EchoTime": 0.00658
-      },
-      "sidecarChanges": {
-        "TaskName": "fmap"
-      }
-    },
-    {
-      "dataType": "fmap",
-      "modalityLabel": "phasediff",
-      "criteria": {
-        "SeriesDescription": "field_map_3mm",
-        "ImageType": ["ORIGINAL", "PRIMARY", "P", "ND", "PHASE"],
-		"EchoTime1": 0.00412,
-		"EchoTime2": 0.00658
-      },
-      "sidecarChanges": {
-        "TaskName": "fmap"
       }
     }
   ]
