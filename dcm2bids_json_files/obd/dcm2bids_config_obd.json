@@ -32,6 +32,16 @@
     },
     {
       "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+        "SeriesDescription": "t1_mprage_sag_limited"
+      },
+      "sidecarChanges": {
+        "ProtocolName": "T1"
+      }
+    },
+    {
+      "dataType": "anat",
       "modalityLabel": "IR",
       "criteria": {
         "SeriesDescription": "IR_EPI"
@@ -121,7 +131,7 @@
       "modalityLabel": "bold",
       "customLabels": "task-foodpics_run-02",
       "criteria": {
-        "SeriesDescription": "fMRI_Food_run2"
+        "SeriesDescription": "fMRI_Food_run2" 
       },
       "sidecarChanges": {
         "TaskName": "foodpics"
