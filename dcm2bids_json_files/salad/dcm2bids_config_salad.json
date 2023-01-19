@@ -111,6 +111,17 @@
     {
       "dataType": "func",
       "modalityLabel": "bold",
+      "customLabels": "task-foodpics_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_FoodPics_1"
+      },
+      "sidecarChanges": {
+        "TaskName": "foodpics"
+      }
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
       "customLabels": "task-foodpics_run-02",
       "criteria": {
         "SeriesDescription": "fMRI_FoodPics_2"
