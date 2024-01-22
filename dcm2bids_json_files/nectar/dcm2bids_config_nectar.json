@@ -1,131 +1,192 @@
 {
   "descriptions": [
     {
-      "dataType": "anat",
-      "modalityLabel": "T1w",
+      "datatype": "anat",
+      "suffix": "T1w",
       "criteria": {
         "SeriesDescription": "t1_mprage_ax_p2"
       },
-      "sidecarChanges": {
+      "sidecar_changes": {
         "ProtocolName": "T1"
       }
     },    
-
     {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-01",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-foodpics_run-01",
       "criteria": {
         "SeriesDescription": "fMRI_FoodPics_1a"
       },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
+      "sidecar_changes": {
+        "TaskName": "foodpics",
+        "B0FieldSource": "phasediff_fmap1"
       }
     },
 	{
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-02",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-foodpics_run-02",
       "criteria": {
         "SeriesDescription": "fMRI_FoodPics_1b"
       },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
+      "sidecar_changes": {
+        "TaskName": "foodpics",
+        "B0FieldSource": "phasediff_fmap1"
       }
     },
     {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-03",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-foodpics_run-03",
       "criteria": {
         "SeriesDescription": "fMRI_FoodPics_2a"
       },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
+      "sidecar_changes": {
+        "TaskName": "foodpics",
+        "B0FieldSource": "phasediff_fmap2"
       }
     },
 	{
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-foodpics_run-04",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-foodpics_run-04",
       "criteria": {
         "SeriesDescription": "fMRI_FoodPics_2b"
       },
-      "sidecarChanges": {
-        "TaskName": "foodpics"
+      "sidecar_changes": {
+        "TaskName": "foodpics",
+        "B0FieldSource": "phasediff_fmap2"
       }
     },
-
-
     {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-rest_run-01",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-rest_run-01",
       "criteria": {
-        "SeriesDescription": "fMRI_rest"
+        "SeriesDescription": "fMRI_rest_1"
       },
-      "sidecarChanges": {
-        "TaskName": "rest"
+      "sidecar_changes": {
+        "TaskName": "rest",
+        "B0FieldSource": "phasediff_fmap1"
       }
     },
+
     {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-rest_run-02",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-rest_run-02",
       "criteria": {
         "SeriesDescription": "fMRI_rest_2"
       },
-      "sidecarChanges": {
-        "TaskName": "rest"
+      "sidecar_changes": {
+        "TaskName": "rest",
+        "B0FieldSource": "phasediff_fmap2"
       }
     },
    {
-      "dataType": "func",
-      "modalityLabel": "bold",
-      "customLabels": "task-priming_run-01",
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-priming_run-01",
       "criteria": {
         "SeriesDescription": "fMRI_Priming"
       },
-      "sidecarChanges": {
-        "TaskName": "priming"
+      "sidecar_changes": {
+        "TaskName": "priming",
+        "B0FieldSource": "phasediff_fmap1"
       }
     },    
-    
     {
-      "dataType": "fmap",
-      "modalityLabel": "magnitude1",
+      "datatype": "fmap",
+      "suffix": "magnitude1",
       "criteria": {
-        "SeriesDescription": "field_map_3mm",
+        "SeriesDescription": "field_map_3mm_ND",
         "EchoNumber": 1,
-        "EchoTime": 0.00412
+        "EchoTime": 0.00412,
+        "SidecarFilename": "015*e1.json"
       },
-      "sidecarChanges": {
-        "TaskName": "fmap"
+      "IntendedFor": [1,2,5,7],
+      "sidecar_changes": {
+      	"B0FieldIdentifier": "phasediff_fmap1"
       }
     },
     {
-      "dataType": "fmap",
-      "modalityLabel": "magnitude2",
+      "datatype": "fmap",
+      "suffix": "magnitude2",
       "criteria": {
-        "SeriesDescription": "field_map_3mm",
+        "SeriesDescription": "field_map_3mm_ND",
         "EchoNumber": 2,
-		"EchoTime": 0.00658
+		"EchoTime": 0.00658,
+        "SidecarFilename": "015*e2.json"
       },
-      "sidecarChanges": {
-        "TaskName": "fmap"
+      "IntendedFor": [1,2,5,7],
+      "sidecar_changes": {
+      	"B0FieldIdentifier": "phasediff_fmap1"
       }
     },
     {
-      "dataType": "fmap",
-      "modalityLabel": "phasediff",
+      "datatype": "fmap",
+      "suffix": "phasediff",
       "criteria": {
-        "SeriesDescription": "field_map_3mm",
-        "ImageType": ["ORIGINAL", "PRIMARY", "P", "ND", "PHASE"],
+        "SeriesDescription": "field_map_3mm_ND",
+        "ImageType": ["ORIGINAL", "PRIMARY", "P", "NONE", "PHASE"],
 		"EchoTime1": 0.00412,
-		"EchoTime2": 0.00658
+		"EchoTime2": 0.00658,
+		"SidecarFilename": "018*e2_ph.json"
       },
-      "sidecarChanges": {
-        "TaskName": "fmap"
+      "IntendedFor": [1,2,5,7],
+      "sidecar_changes": {
+      	"B0FieldIdentifier": "phasediff_fmap1"
+      }
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "magnitude1",
+      "criteria": {
+        "SeriesDescription": "field_map_3mm_ND",
+        "EchoNumber": 1,
+        "EchoTime": 0.00412,
+        "SidecarFilename": "023*e1.json"
+      },
+      "IntendedFor": [3,4,6],
+      "sidecar_changes": {
+      	"B0FieldIdentifier": "phasediff_fmap2"
+      }
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "magnitude2",
+      "criteria": {
+        "SeriesDescription": "field_map_3mm_ND",
+        "EchoNumber": 2,
+		"EchoTime": 0.00658,
+        "SidecarFilename": "023*e2.json"
+      },
+      "IntendedFor": [3,4,6],
+      "sidecar_changes": {
+      	"B0FieldIdentifier": "phasediff_fmap2"
+      }
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "phasediff",
+      "criteria": {
+        "SeriesDescription": "field_map_3mm_ND",
+        "ImageType": ["ORIGINAL", "PRIMARY", "P", "NONE", "PHASE"],
+		"EchoTime1": 0.00412,
+		"EchoTime2": 0.00658,
+		"SidecarFilename": "026*e2_ph.json"
+      },
+      "IntendedFor": [3,4,6],
+      "sidecar_changes": {
+      	"B0FieldIdentifier": "phasediff_fmap2"
+      }
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "epi",
+      "custom_entities": "dir-PA",
+      "criteria": {
+        "SeriesDescription": "fMRI_BLIP_PA"
       }
     }
   ]
